@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom-style.css">
+
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 overflow-hidden h-100">
+                <div class="hospital-bg">
+                    <img src="./assets/Icon/Design-Right.svg" alt="Design" class="img-fluid bg-cover-img design-right">
+                </div>
+            </div>
+            <div class="col-md-3 mt-login mb-5 pd-5 ms-5">
+                <div>
+                    <h3 class="text-title">Create Account</h3>
+                    <p>Welcome to M.D.M,S. Let’s get started.</p>
+                </div>
+                <div class="form-group mt-5">
+                    <div class="mb-4">
+                        <label for="fname" class="form-label fw-bold">Firstname</label>
+                        <input type="text" class="form-control" id="fname" placeholder="john">
+                    </div>
+                    <div class="mb-4">
+                        <label for="lname" class="form-label fw-bold">Lastname</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Afolabi">
+                    </div>
+                    <div class="mb-4">
+                        <label for="others" class="form-label fw-bold">Othername</label>
+                        <input type="text" class="form-control" id="others" placeholder="Musa">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-bold">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="xxx@email.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="tel" class="form-label fw-bold">Mobile No</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="xxx-xxxx-xxx">
+                    </div>
+                    <div class="mb-4">
+                        <label for="designation" class="form-label fw-bold">Designation</label>
+                        <select class="form-select" aria-label="designation" id="designation">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Receptionist</option>
+                            <option value="2">Blood Test</option>
+                            <option value="3">Xray</option>
+                            <option value="3">ECG</option>
+                          </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label fw-bold">Password</label>
+                        <input type="password" class="form-control" id="password">
+                        <span toggle="#password-field" class="d-inline-block field-icon-hide" id="togglePassword"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label for="joinDate" class="form-label fw-bold">joinDate</label>
+                        <input type="date" class="form-control" id="joinDate">
+                    </div>
+                </div>
+                <div class="d-grid mt-5">
+                    <a href="#" class="btn p-2 btn-custom-primary">
+                            Create Account
+                        </a>
+                    <p class="text-center mt-3">Already Have an Account. <a href="login.html" class="form-link ms-2">Create</a></p>
+                </div>
+
+                <p class="text-muted  mt-5 text-end">©Mediplus 2021</p>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./Js/index.js"></script>
+
+</body>
+
+</html>
