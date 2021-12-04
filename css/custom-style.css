@@ -19,6 +19,8 @@
     --ui-black: #000;
     --accent-red: #FF1111;
     --accent-green: #3CCA0A;
+    --accent-purple: #6D45FF;
+    --accent-brown: #FF9246;
     /* main-dashboard colors */
     --dark-pink: #FD4B85;
     --light-pink: #FFEDEE;
@@ -293,6 +295,11 @@ body {
     background-color: var(--accent-red);
 }
 
+.btn-custom-success {
+    color: white;
+    background-color: var(--accent-green);
+}
+
 .btn-outline-custom-primary {
     color: var(--primmary-color);
     border: 1px solid var(--primmary-color);
@@ -526,4 +533,40 @@ label {
     position: absolute;
     bottom: 10px;
     left: 20px;
+}
+
+
+/* Tag ui */
+
+.ui-tag {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.receptionist-tag {
+    background-color: hsla(0, 97%, 59%, 0.1);
+    color: var(--accent-red);
+}
+
+.blood-tag {
+    background-color: hsla(253, 100%, 64%, 0.1);
+    color: var(--accent-purple);
+}
+
+.malaria-tag {
+    background-color: hsla(25, 100%, 64%, 0.1);
+    color: var(--accent-brown);
+}
+
+.xray-tag {
+    background-color: hsla(104, 90%, 42%, 0.1);
+    color: var(--accent-green);
+}
+
+.staff-profile {
+    background: url(../assets/Img/Female\ Profile.jpg) center center/cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
 }

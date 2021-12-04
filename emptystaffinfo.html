@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom-style.css">
+
+    <title>Transactions</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 bg-custom-dark min-vh-100 side-bar-wrapper" id="left-wrapper">
+                <!-- <div class="side-bar-wrapper"> -->
+                <div class=" mt-3">
+                    <img src="./assets/Icon/Brand Logo-mark.svg" alt="brand logo" class="img-fluid brand-logo">
+                </div>
+                <div class="side-bar">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <a href="main-dashboard.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Category-icon.svg" alt="category" class="img-fluid me-3 ">Dashboard</a>
+                        <a href="patientprofile.html" class="side-link py-3 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Patient Profile.svg" alt="patient" class="img-fluid me-3 ">Patient Profile</a>
+                        <a href="staff.html" class="side-link side-link-active py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/2 User-icon.svg" alt="staff info" class="img-fluid me-3 ">Staff Info</a>
+                        <a href="designation.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Activity.svg" alt="Designation" class="img-fluid me-3 ">Designation</a>
+                        <a href="transaction.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Wallet.svg" alt="wallet" class="img-fluid me-3 ">Transactions</a>
+                        <a href="patientinfo.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/2 User-icon.svg" alt="category" class="img-fluid me-3 ">Patient Info</a>
+                        <a href="diagnosis.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Paper.svg" alt="category" class="img-fluid me-3 ">Diagnosis</a>
+                        <a href="calendar.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Calendar-icon.svg" alt="category" class="img-fluid me-3 ">Calendar</a>
+                        <hr class="mt-4 hr-custom mb-2">
+                        <a href="settings.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Setting-icon.svg" alt="category" class="img-fluid me-3 ">Settings</a>
+                        <a href="#" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Logout-icon.svg" alt="category" class="img-fluid me-3 ">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10" id="right-wrapper">
+                <div class="card-body top-nav bg-medium-gray">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="search-input">
+                            <input type="search" class="form-control rounded-pill p-2 px-3" placeholder="Search for details">
+                            <span class="d-inline-block search-icon" id="togglePassword"></span>
+                        </div>
+                        <div class="details">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/Icon/notification-icon.svg" alt="notification-icon" class="img-fluid notification-icon d-inline-block me-4">
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center pe-4">
+                                        <div class="profile-mask">
+                                            <img src="./assets/Img/Profile.jpg" alt="profile" class="img-fluid profile-picture d-inline-block">
+                                        </div>
+                                        <div class="profile-details ms-2">
+                                            <h6 class="fw-bolder">Abram Geidt</h6>
+                                            <p class="text-grey">Super Admin</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ms-3 mt-3 me-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="fw-900">Staff Info</h2>
+                        <div>
+                            <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#newstaff"><img src="./assets/Icon/Plus.svg" alt="plus icon" class="img-fluid me-2">Add Staff</button>
+                            <button class="btn btn-custom-primary-light mx-2"><img src="./assets/Icon/white-edit.svg" alt="edit icon" class="img-fluid me-2">Edit</button>
+                            <button class="btn btn-custom-danger"><img src="./assets/Icon/white-delete.svg" alt="delete icon" class="img-fluid me-2">Delete</button>
+                        </div>
+                    </div>
+                    <table class="table mt-4 mx-2 medium-shadow">
+                        <thead class="bg-light-gray">
+                            <tr>
+                                <th><span class="me-5 ms-5">Name</span><span class="mx-5">Email Address</span><span class="mx-5">Gender</span><span class="mx-4">Date of Birth</span><span class="mx-5">Age</span><span class="mx-4">Marital Status</span>
+                                    <span class="mx-4">Mobile Number</span><span class="mx-5">Designation</span></th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white">
+                            <tr>
+                                <td class="p-5">
+                                    <div class="d-flex flex-column justify-content-center align-items-center p-5">
+                                        <img src="./assets/Icon/staffinfo-illustration.svg" alt="empty" class="d-inline-block text-center empty-illustration">
+                                        <p class=" text-center text-dark-gray mt-3">Sorry, you have no staff information <br> at the moment</p>
+                                        <button class="btn btn-custom-primary m-2" data-bs-toggle="modal" data-bs-target="#newstaff">Create New Staff</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bring-top" id="newstaff" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-0 medium-shadow bg-white rounded-3 p-4">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="modal-title fw-700" id="staticBackdropLabel">Add New Staff</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <label for="fname" class="form-label">Firstname</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname" class="form-label">Lastname</label>
+                            <input type="text" class="form-control" id="lname">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="DOB" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="DOB">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="gender" class="form-label">Gender <br></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="gender" id="male">
+                                <label for="male" class="form-check-label">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="gender" id="female">
+                                <label for="female" class="form-check-label">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="gender" id="others">
+                                <label for="others" class="form-check-label">Others</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="marital" class="form-label">Marital Status<br></label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="marital" id="single">
+                                <label for="single" class="form-check-label">Single</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="marital" id="married">
+                                <label for="married" class="form-check-label">Married</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" name="marital" id="Divorced">
+                                <label for="Divorced" class="form-check-label">Divorced</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="age">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobileno" class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control" id="mobileno">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bmt-2">
+                    <button type="button" class="btn btn-custom-danger" data-bs-dismiss="modal">Cancel</button>
+                    <a href="#" class="btn btn-custom-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#emergencycontact">Save</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
