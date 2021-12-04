@@ -10,6 +10,7 @@
     --bg-dark: #101213;
     --primmary-color: #2FB2FC;
     --primmary-light-color: #7FCDFA;
+    --primmary-lighter-color: #D5F0FE;
     --lighter-gray: #F0F0F0;
     --light-gray: #E8E8E8;
     --medium-gray: #D9D9D9;
@@ -29,8 +30,36 @@
     --light-purple: #F7ECFF;
     --medium-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --dashboard-card-shaodw: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    border-radius: 11.2881px;
+    --border-radius: 11.2881px;
 }
+
+
+/* border radius */
+
+.br-lg {
+    border-radius: 32px !important;
+}
+
+
+/* text size */
+
+.text-sm {
+    font-size: 18px !important;
+}
+
+.text-md {
+    font-size: 20px !important;
+}
+
+
+/* Margin */
+
+.lr-margin {
+    margin-right: 20%;
+}
+
+
+/* Text Color */
 
 .text-accent-green {
     color: var(--accent-green);
@@ -40,12 +69,19 @@
     color: var(--accent-red);
 }
 
+.bring-top {
+    z-index: 9999999999;
+}
+
 
 /* dropdshow */
 
 .medium-shadow {
     box-shadow: var(--medium-shadow);
 }
+
+
+/* font weight */
 
 .fw-900 {
     font-weight: 900 !important;
@@ -451,4 +487,43 @@ label {
 
 .table-header {
     font-size: 1.5rem !important;
+}
+
+
+/* Reception Patient */
+
+.patient-img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--primmary-color);
+    border-radius: 50%;
+    background: url(../assets/Img/Female\ Profile.jpg) center center/cover;
+}
+
+.info-table {
+    font-size: 20px;
+}
+
+
+/* tag primary */
+
+.tag-primary {
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    background-color: var(--primmary-lighter-color);
+    display: inline-block;
+    color: var(--primmary-color);
+}
+
+.xray {
+    background: url(../assets/Img/xray.png) center center/cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+
+.result-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 }

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom-style.css">
+
+    <title>Main Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 bg-custom-dark min-vh-100 side-bar-wrapper" id="left-wrapper">
+                <!-- <div class="side-bar-wrapper"> -->
+                <div class=" mt-3">
+                    <img src="./assets/Icon/Brand Logo-mark.svg" alt="brand logo" class="img-fluid brand-logo">
+                </div>
+                <div class="side-bar">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <a href="main-dashboard.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Category-icon.svg" alt="category" class="img-fluid me-3 ">Dashboard</a>
+                        <a href="patientprofile.html" class="side-link-active side-link py-3 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Patient Profile.svg" alt="patient" class="img-fluid me-3 ">Patient Profile</a>
+                        <a href="patientinfo.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/2 User-icon.svg" alt="category" class="img-fluid me-3 ">Patient Info</a>
+                        <a href="diagnosis.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Paper.svg" alt="category" class="img-fluid me-3 ">Diagnosis</a>
+                        <a href="calendar.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Calendar-icon.svg" alt="category" class="img-fluid me-3 ">Calendar</a>
+                        <hr class="mt-5 hr-custom mb-2">
+                        <a href="settings.html" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Setting-icon.svg" alt="category" class="img-fluid me-3 ">Settings</a>
+                        <a href="#" class="side-link py-3 pe-4 text-white text-decoration-none fw-bolder d-inline-block text-center"><img src="./assets/Icon/Logout-icon.svg" alt="category" class="img-fluid me-3 ">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10" id="right-wrapper">
+                <div class="card-body top-nav bg-medium-gray">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="search-input">
+                            <input type="search" class="form-control rounded-pill p-2 px-3" placeholder="Search for details">
+                            <span class="d-inline-block search-icon" id="togglePassword"></span>
+                        </div>
+                        <div class="details">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img src="./assets/Icon/notification-icon.svg" alt="notification-icon" class="img-fluid notification-icon d-inline-block me-4">
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center pe-4">
+                                        <div class="profile-mask">
+                                            <img src="./assets/Img/profile-2.jpg" alt="profile" class="img-fluid profile-picture d-inline-block">
+                                        </div>
+                                        <div class="profile-details ms-2">
+                                            <h6 class="fw-bolder">Alina Mary</h6>
+                                            <p class="text-grey">Receptionist</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ms-3 mt-3 me-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="fw-900">Patient Profile</h2>
+                        <button class="btn btn-custom-primary text-white" data-bs-toggle="modal" data-bs-target="#newpatientmodal">Create New Appointments</button>
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <div class="card-body border-0 bg-white d-grid justify-content-center rounded-3 medium-shadow py-5">
+                            <div class="patient-img card-link mx-auto py-2">
+
+                            </div>
+                            <div class="info-box mx-auto">
+                                <h5 class="mt-5">
+                                    <span class="fw-400 me-4">Firstname</span>
+                                    <span class="fw-900">Miracle</span>
+                                </h5>
+                                <h5 class="mt-3">
+                                    <span class="fw-400 me-4">Lastname</span>
+                                    <span class="fw-900">Dias</span>
+                                </h5>
+                                <h5 class="mt-3">
+                                    <span class="fw-400 me-4">Email</span>
+                                    <span class="fw-900">Miracledias@gmail.com</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mt-4">
+                        <div class="card-body border-0 bg-white rounded-3 medium-shadow p-5 mb-5">
+                            <h4 class="fw-900">Other Details</h4>
+                            <table class="table info-table width-95 mt-4 table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-400">Gender</td>
+                                        <td class="fw-900">Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Date of Birth</td>
+                                        <td class="fw-900">2/02/2021</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Age</td>
+                                        <td class="fw-900">32</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Marital Status</td>
+                                        <td class="fw-900">Single</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Address</td>
+                                        <td class="fw-900">2972 Westheimer Rd. Santa Ana, Illinois 85486</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Blood Group</td>
+                                        <td class="fw-900">AA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Blood Pressure</td>
+                                        <td class="fw-900">120sy</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Height</td>
+                                        <td class="fw-900">5.6m</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-400">Weight</td>
+                                        <td class="fw-900">56kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card bg-white p-5 border-0 br-lg">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="ms-3">
+                                    <h4 class="fw-900">Xray Appointment</h4>
+                                    <p class="fw-900 text-accent-green">25 August</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#addsample">Add Sample</button>
+                                    <img src="./assets/Icon/Delete-Red.svg" alt="delete" class="img-fluid ms-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card bg-white p-5 border-0 br-lg">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="ms-3">
+                                    <h4 class="fw-900">ECG</h4>
+                                    <p class="fw-900 text-accent-green">26 October</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#addsample">Add Sample</button>
+                                    <img src="./assets/Icon/Delete-Red.svg" alt="delete" class="img-fluid ms-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-5">
+                        <div class="card bg-white p-5 border-0 br-lg">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="ms-3">
+                                    <h4 class="fw-900">Blood Test</h4>
+                                    <p class="fw-900 text-accent-green">13 October</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-custom-primary" data-bs-toggle="modal" data-bs-target="#addsample">Add Sample</button>
+                                    <img src="./assets/Icon/Delete-Red.svg" alt="delete" class="img-fluid ms-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade bring-top" id="addsample" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-0 medium-shadow bg-white rounded-3 p-4">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-between">
+                        <h5 class="modal-title fw-700" id="staticBackdropLabel">Add Sample</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <label for="remark" class="form-label">Remark</label>
+                            <textarea class="form-control" id="remark" cols="20" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer bmt-2">
+                    <button type="button" class="btn btn-custom-danger" data-bs-dismiss="modal">Cancel</button>
+                    <a href="#" class="btn btn-custom-primary">Add Sample</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
