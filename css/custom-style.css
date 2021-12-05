@@ -230,6 +230,7 @@ body {
 
 .field-icon-hide {
     background: url('../assets/Icon/Hide.svg');
+    background-repeat: no-repeat;
 }
 
 .search-icon {
@@ -246,6 +247,7 @@ body {
 
 .field-icon-show {
     background: url('../assets/Icon/Show.svg');
+    background-repeat: no-repeat;
 }
 
 
@@ -569,4 +571,20 @@ label {
     height: 150px;
     width: 200px;
     border-radius: 10px;
+}
+
+
+/* Login text edit */
+
+.side-text {
+    position: absolute;
+    bottom: 10px;
+    left: 150px;
+    z-index: 99999999999999;
+    text-align: center;
+}
+
+.dervac {
+    height: 50px;
+    width: auto;
 }
